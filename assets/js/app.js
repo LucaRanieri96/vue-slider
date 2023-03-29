@@ -52,9 +52,6 @@ createApp({
     thumbClick(index) {
       this.activeImage = index;
     },
-    mounted(){
-      this.setAutoplay();
-    },
     setAutoplay() {
       this.autoplay = setInterval(() => {
         this.nextImage();
@@ -63,5 +60,8 @@ createApp({
     nextImage() {
       this.activeImage === this.games.length - 1 ? this.activeImage = 0 : this.activeImage++;
     },
+  },
+  mounted(){
+    this.setAutoplay();
   },
 }).mount("#app");
