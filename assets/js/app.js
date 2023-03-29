@@ -53,7 +53,7 @@ createApp({
       this.activeImage = index;
     },
     mounted(){
-      this.setAutoplay()
+      this.setAutoplay;
     },
     setAutoplay() {
       this.autoplay = setInterval(() => {
