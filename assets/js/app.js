@@ -4,6 +4,7 @@ createApp({
   data() {
     return {
       activeImage: 0,
+      autoplay: '',
       games: [
         {
           title: "Marvel's Spiderman Miles Morale",
@@ -51,6 +52,10 @@ createApp({
     thumbClick(index) {
       this.activeImage = index;
     },
-    // autoplay()
+    setAutoplay() {
+      this.autoplay = setInterval(() => {
+        this.nextImage();
+      }, 3000);
+    },
   },
 }).mount("#app");
