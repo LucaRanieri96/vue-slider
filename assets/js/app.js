@@ -4,7 +4,7 @@ createApp({
   data() {
     return {
       activeImage: 0,
-      autoplay: '',
+      autoplay: null,
       games: [
         {
           title: "Marvel's Spiderman Miles Morale",
@@ -53,7 +53,7 @@ createApp({
       this.activeImage = index;
     },
     mounted(){
-      this.setAutoplay;
+      this.setAutoplay();
     },
     setAutoplay() {
       this.autoplay = setInterval(() => {

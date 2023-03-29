@@ -10,17 +10,6 @@ body {
 	box-shadow: 0 0 10px rgb(132, 132, 132);
 }
 
-button.revert
-{
-	padding: 0.25rem 0.5rem;
-	margin: 1rem 0;
-	border: none;
-	background-color: black;
-	color: white;
-	border-radius: 1rem;
-
-}
-
 button.prev,
 button.next
 {
@@ -50,6 +39,7 @@ button.next
 {
 	position: relative;
 	height: 100%;
+	width: 80%;
 }
 
 .slides .text
@@ -72,11 +62,6 @@ button.next
 {
 	width: 100%;
 	object-fit: cover;
-}
-
-.slides
-{
-	width: 80%;
 }
 
 .thumbs
