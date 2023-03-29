@@ -32,20 +32,20 @@ createApp({
   methods: {
     prev(){
         console.log("Prev")
-        this.activeGame--;
-        if (this.activeGame < 0){
-            this.activeGame = this.game.image.length - 1
+        this.activeImage--;
+        if (this.activeImage < 0){
+            this.activeImage = this.game.image.length - 1
         }
     },
     next(){
         console.log("Next")
-        this.activeGame++;
-        if (this.activeGame >= this.game.image.length){
-            this.activeGame = 0
+        this.activeImage++;
+        if (this.activeImage >= this.game.image.length){
+            this.activeImage = 0
         }
     },
     thumbClick(index){
-        this.activeGame = index
+        this.activeImage = index
     }
 }
 }).mount("#app");

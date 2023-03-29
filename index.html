@@ -23,14 +23,20 @@
         <i class="fa-solid fa-arrow-rotate-left"></i>
       </button>
       <div class="slider">
+
         <div class="controls">
-          <button class="prev"><i class="fa fa-arrow-up"></i></button>
-          <button class="next"><i class="fas fa-arrow-down"></i></button>
+          <button class="prev">
+            <i class="fa fa-arrow-up" @click="prev"></i>
+          </button>
+          <button class="next" @click="next">
+            <i class="fas fa-arrow-down"></i>
+          </button>
         </div>
+
         <div class="slides">
           <img :src="games.images[activeImage]" alt="">
-  
         </div>
+
         <div class="thumbs">
           
         </div>
