@@ -5,6 +5,7 @@ createApp({
     return {
       activeImage: 0,
       autoplay: null,
+      showThumbs: false,
       games: [
         {
           title: "Marvel's Spiderman Miles Morale",
@@ -25,6 +26,16 @@ createApp({
           title: "Stray",
           text: "Lost, injured and alone, a stray cat must untangle an ancient mystery to escape a long-forgotten city",
           image: "./assets/img/04.webp",
+        },
+        {
+          title: "Marvel's Avengers",
+          text: "Marvel's Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.",
+          image: "./assets/img/05.webp",
+        },
+        {
+          title: "Marvel's Avengers",
+          text: "Marvel's Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.",
+          image: "./assets/img/05.webp",
         },
         {
           title: "Marvel's Avengers",
@@ -54,10 +65,12 @@ createApp({
     },
     stopAutoplay() {
       clearInterval(this.autoplay);
+      this.showThumbs = true;
     },
     setAutoplay() {
       this.autoplay = setInterval(() => {
         this.nextImage();
+        this.showThumbs = false;
       }, 3000);
     },
     nextImage() {

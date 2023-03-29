@@ -41,7 +41,7 @@
           </div>
         </div>
         
-        <div class="thumbs">
+        <div class="thumbs" v-show="showThumbs">
           <img v-for="(game, index) in games" @click="thumbClick(index)" :src="game.image" :class="index === activeImage ? 'active' : '' "/>
         </div>
       </div>

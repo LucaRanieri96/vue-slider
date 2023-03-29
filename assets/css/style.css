@@ -1,88 +1,96 @@
-body {
-	background-color: rgb(37, 37, 37);
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
 }
 
-.slider
-{
-	position: relative;
-	height: 800px;
-	display: flex;
-	box-shadow: 0 0 10px rgb(132, 132, 132);
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body {
+  background-color: rgb(37, 37, 37);
+}
+
+.slider {
+  position: relative;
+  height: 800px;
+  display: flex;
+  box-shadow: 0 0 10px rgb(132, 132, 132);
 }
 
 button.prev,
-button.next
-{
-	display: inline-block;
-	border: none;
-	background-color: white;
-	width: 30px;
-	aspect-ratio: 1;
-	border-radius: 50%;
-	margin: 0.25rem;
+button.next {
+  display: inline-block;
+  border: none;
+  background-color: white;
+  width: 30px;
+  aspect-ratio: 1;
+  border-radius: 50%;
 
+  margin: 0.5rem 1.2rem 0.5rem 0;
 }
 
-.controls
-{
-	position: absolute;
-	right: 0px;
-	height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	z-index: 1;
-
+.controls {
+  position: absolute;
+  right: 0px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
 }
 
-.slides
-{
-	position: relative;
-	height: 100%;
-	width: 80%;
+.slides {
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
-.slides .text
-{
-	color: white;
-	position: absolute;
-	bottom: 1rem;
-	left: 10px;
-	padding: 1rem;
-	text-shadow: 0 0 5px black;
+.slides .text {
+  color: white;
+  position: absolute;
+  bottom: 1rem;
+  left: 10px;
+  padding: 1rem;
+  text-shadow: 0 0 5px black;
 }
 
 .slides,
-.slides img
-{
-	height: 100%;
+.slides img {
+  height: 100%;
 }
 
-.slides img
-{
-	width: 100%;
-	object-fit: cover;
+.slides img {
+  width: 100%;
+  object-fit: cover;
 }
 
-.thumbs
-{
-	width: 20%;
-	display: flex;
-	flex-direction: column;
+.thumbs {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
 }
 
-.thumbs img
-{
-	height: calc(100% / 5);
-	object-fit: cover;
+.thumbs img {
+  height: 200px;
 }
 
-.thumbs img.active
-{
-	border: 4px inset black;
+.thumbs img.active {
+  border: 4px inset rgb(255, 255, 255);
 }
 
-.thumbs img:not(.active)
-{
-	opacity: 0.5;
+.thumbs img:not(.active) {
+  opacity: 0.3;
 }
