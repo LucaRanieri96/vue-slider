@@ -41,6 +41,14 @@ button.next {
   margin: 0.5rem 1.2rem 0.5rem 0;
 }
 
+h2 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 25px;
+}
+
 .controls {
   position: absolute;
   right: 0px;

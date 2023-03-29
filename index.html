@@ -36,8 +36,8 @@
           <!--<img v-for="(game, index) in games" :src="game.image" :class="{ active: index === activeImage }">-->
           <img :src="games[activeImage].image">
           <div class="text">
-            <h3>{{games[activeImage].title}}</h3>
-            <div>{{games[activeImage].text}}</div>
+            <h2>{{games[activeImage].title}}</h2>
+            <p>{{games[activeImage].text}}</p>
           </div>
         </div>
         
