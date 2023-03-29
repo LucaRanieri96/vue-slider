@@ -77,6 +77,7 @@ button.next
 	bottom: 1rem;
 	left: 10px;
 	padding: 1rem;
+	text-shadow: 0 0 5px black;
 }
 
 .slides,
