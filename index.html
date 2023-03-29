@@ -34,11 +34,11 @@
         </div>
 
         <div class="slides">
-          <img :src="games.images[activeImage]" alt="">
+          <img :src="games.images[activeImage]">
         </div>
 
         <div class="thumbs">
-          
+          <img :class="index === activeImage ? 'active' : '' " :src="games.images" v-for="(image, index) in games.images" @click="thumbClick(index)">
         </div>
       </div>
     </div>
