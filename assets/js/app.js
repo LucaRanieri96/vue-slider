@@ -39,7 +39,7 @@ createApp({
         },
         {
           title: "Elden Ring",
-          text: "Elden Ring is an upcoming action role-playing game developed by FromSoftware and published by Bandai Namco. The game is set in a dark fantasy world created by both Miyazaki and George R. R. Martin.",
+          text: "Elden Ring is an action role-playing game developed by FromSoftware and published by Bandai Namco. The game is set in a dark fantasy world created by both Miyazaki and George R. R. Martin.",
           image: "./assets/img/07.webp",
         },
         {
