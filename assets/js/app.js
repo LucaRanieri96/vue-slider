@@ -57,5 +57,8 @@ createApp({
         this.nextImage();
       }, 3000);
     },
+    nextImage() {
+      this.activeImage === this.games.length - 1 ? this.activeImage = 0 : this.activeImage++;
+    },
   },
 }).mount("#app");
