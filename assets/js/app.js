@@ -52,6 +52,9 @@ createApp({
     thumbClick(index) {
       this.activeImage = index;
     },
+    mounted(){
+      this.setAutoplay()
+    },
     setAutoplay() {
       this.autoplay = setInterval(() => {
         this.nextImage();
