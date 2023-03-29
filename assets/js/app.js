@@ -34,13 +34,13 @@ createApp({
         console.log("Prev")
         this.activeImage--;
         if (this.activeImage < 0){
-            this.activeImage = this.game.image.length - 1
+            this.activeImage = this.games.images.length - 1
         }
     },
     next(){
         console.log("Next")
         this.activeImage++;
-        if (this.activeImage >= this.game.image.length){
+        if (this.activeImage >= this.games.images.length){
             this.activeImage = 0
         }
     },
