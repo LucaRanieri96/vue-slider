@@ -62,23 +62,18 @@ button.next
 
 }
 
-.slide
+.slides
 {
 	position: relative;
 	height: 100%;
 }
 
-.slide:not(.active)
-{
-	display: none;
-}
-
-.slide .text
+.slides .text
 {
 	color: white;
 	position: absolute;
 	bottom: 1rem;
-	text-align: end;
+	left: 10px;
 	padding: 1rem;
 }
 

@@ -34,9 +34,14 @@
         </div>
 
         <div class="slides">
-          <img v-for="(game, index) in games" :src="game.image">
+          <!--<img v-for="(game, index) in games" :src="game.image" :class="{ active: index === activeImage }">-->
+          <img :src="games[activeImage].image">
+          <div class="text">
+            <h3>{{games[activeImage].title}}</h3>
+            <div>{{games[activeImage].text}}</div>
+          </div>
         </div>
-
+        
         <!-- <div class="thumbs">
           <img :class="index === activeImage ? 'active' : '' " :src="games.images[index]" v-for="(image, index) in games.images" @click="thumbClick(index)">
         </div> -->

@@ -38,13 +38,13 @@ createApp({
       console.log("Prev");
       this.activeImage--;
       if (this.activeImage < 0) {
-        this.activeImage = this.games.image.length - 1;
+        this.activeImage = this.games.length - 1;
       }
     },
     next() {
       console.log("Next");
       this.activeImage++;
-      if (this.activeImage >= this.games.image.length) {
+      if (this.activeImage >= this.games.length) {
         this.activeImage = 0;
       }
     },
