@@ -21,7 +21,7 @@
 
       <h1 class="text-light text-center py-3">Game Carousel</h1>
 
-      <div class="slider">
+      <div class="slider" @mouseover="stopAutoplay" @mouseout="setAutoplay">
 
         <div class="controls">
           <button class="prev">
