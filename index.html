@@ -42,9 +42,9 @@
           </div>
         </div>
         
-        <!-- <div class="thumbs">
-          <img :class="index === activeImage ? 'active' : '' " :src="games.images[index]" v-for="(image, index) in games.images" @click="thumbClick(index)">
-        </div> -->
+        <div class="thumbs">
+          <img v-for="(game, index) in games" @click="thumbClick(index)" :src="game.image"/>
+        </div>
       </div>
     </div>
 
