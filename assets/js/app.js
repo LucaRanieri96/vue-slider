@@ -51,5 +51,6 @@ createApp({
     thumbClick(index) {
       this.activeImage = index;
     },
+    // autoplay()
   },
 }).mount("#app");
